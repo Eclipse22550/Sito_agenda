@@ -1,0 +1,93 @@
+.alert { 
+    background: var(--col1);
+    padding: 20px 40px;
+    min-width: 400px;
+    width: 140px;
+    position: absolute;
+    right: 0px;
+    z-index: 1;
+    top: 15px;
+    border-radius: 5px;
+    border-left: 5px solid var(--col2);
+    pointer-events: none;
+}
+
+.alert.show{
+    animation: show_slide 1s ease forwards;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+@keyframes show_slide{
+    0%{
+        transform: translateX(100%);
+    }
+    40%{
+        transform: translateX(-10%);
+    }
+    80%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-2px);
+    }
+}
+
+.alert.hide{
+    animation: hide_slide 1s ease forwards;
+    display: none;
+    opacity: 0;
+    overflow: hidden;
+}
+
+@keyframes hide_slide{
+    0%{
+        transform: translateX(-2px);
+    }
+    40%{
+        transform: translateX(0%);
+    }
+    80%{
+        transform: translateX(-10%);
+    }
+    100%{
+        transform: translateX(100%);
+    }
+}
+
+.alert .fa-exclamation-circle {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--col3);
+    font-size: 22px;
+}
+
+.alert .msg {
+    padding: 0 20px;
+    font-size: 16px;
+    color: var(--col3);
+}
+
+.alert .close-btn {
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--col4);
+    padding: 20px 18px;
+    cursor: pointer;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.alert .close-btn:hover{
+    background: var(--col4);
+}
+
+.alert .close-btn .fa-times {
+    color: var(--col5);
+    font-size: 18px;
+    line-height: 16px;
+}

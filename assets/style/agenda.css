@@ -1,0 +1,25 @@
+.container {
+    font-family: 'Noto Sans', sans-serif;
+}
+.cal{
+    margin-top: 0;
+}
+h3 {
+    margin-bottom: 30px;
+}
+.day-agenda {
+    height: 30px;
+    text-align: center;
+}
+.tr-agenda{
+    height: 100px;
+}
+.day-agenda {
+    height: 100px;
+}
+.today {
+    background: orange;
+}
+.day-agenda:nth-of-type(7), .day-agenda:nth-of-type(7) {
+    color: red;
+}

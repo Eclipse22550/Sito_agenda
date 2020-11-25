@@ -1,0 +1,2 @@
+#ErrorDocument 404 http://www.organizeriec.altervista.org/error/404.php
+ErrorDocument 404 http://localhost/Orari/error/404.php
